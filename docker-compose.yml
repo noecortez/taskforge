@@ -11,3 +11,12 @@ services:
       - ./backend:/app
     environment:
       - NODE_ENV=development
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
