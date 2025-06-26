@@ -1,0 +1,32 @@
+name: ✨ Feature request
+description: Sugiere una nueva funcionalidad o mejora
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: "Gracias por sugerir una mejora. Por favor, proporciona la siguiente información."
+
+  - type: textarea
+    id: description
+    attributes:
+      label: ¿Qué debería hacer esta nueva funcionalidad?
+      description: Explica claramente qué estás solicitando.
+    validations:
+      required: true
+
+  - type: textarea
+    id: justification
+    attributes:
+      label: ¿Por qué es útil?
+      description: ¿Qué problema resuelve? ¿Cómo mejora el proyecto?
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternativas consideradas
+      description: ¿Consideraste otras soluciones o enfoques?
+    validations:
+      required: false

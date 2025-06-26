@@ -1,0 +1,52 @@
+name: 🐛 Bug report
+description: Reporta un problema con el proyecto
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "Gracias por tomarte el tiempo de reportar un bug. Por favor, llena la siguiente información."
+
+  - type: input
+    id: system-info
+    attributes:
+      label: ¿En qué entorno ocurre?
+      description: Ej. navegador, sistema operativo, versión de Node, etc.
+      placeholder: Ej. Chrome 123, macOS 13.4
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: ¿Qué sucedió?
+      description: Describe el comportamiento inesperado.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Pasos para reproducirlo
+      description: Describe cómo reproducir el problema.
+      placeholder: |
+        1. Ir a...
+        2. Hacer clic en...
+        3. Ver el error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: ¿Qué esperabas que sucediera?
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Capturas de pantalla
+      description: Adjunta imágenes si ayudan a entender el problema
+    validations:
+      required: false
