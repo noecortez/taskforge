@@ -5,6 +5,7 @@ WORKDIR /app
 
 # Copiar archivos de configuración
 COPY package*.json ./
+COPY tsconfig.json ./
 
 # Instalar dependencias
 RUN npm install
@@ -16,4 +17,4 @@ COPY . .
 RUN npm run build
 
 # Ejecutar la aplicación
-CMD ["node", "dist/index.js"]
+CMD ["npm", "start"]
